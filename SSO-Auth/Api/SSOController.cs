@@ -90,7 +90,7 @@ public class SSOController : ControllerBase
                 Scope = string.Join(" ", config.OidScopes.Prepend("openid profile")),
             };
             options.Policy.Discovery.ValidateEndpoints = false; // For Google and other providers with different endpoints
-            options.Policy.Discovery.RequireHttps = config.RequireHttps;
+            options.Policy.Discovery.RequireHttps = config.RequireHttps ?? true;
             var oidcClient = new OidcClient(options);
             var currentState = StateManager[state].State;
             var result = await oidcClient.ProcessResponseAsync(Request.QueryString.Value, currentState).ConfigureAwait(false);
@@ -263,6 +263,7 @@ public class SSOController : ControllerBase
                 Scope = string.Join(" ", config.OidScopes.Prepend("openid profile")),
             };
             options.Policy.Discovery.ValidateEndpoints = false; // For Google and other providers with different endpoints
+            options.Policy.Discovery.RequireHttps = config.RequireHttps ?? true;
             var oidcClient = new OidcClient(options);
             var state = await oidcClient.PrepareLoginAsync().ConfigureAwait(false);
             StateManager.Add(state.State, new TimedAuthorizeState(state, DateTime.Now));
