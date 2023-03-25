@@ -1,5 +1,5 @@
 const ssoConfigurationPage = {
-  pluginUniqueId: "505ce9d1-d916-42fa-86ca-673ef241d7df",
+  pluginUniqueId: "3b4e8710-6ea5-4eb6-b470-4d0707917bd3",
   loadConfiguration: (page) => {
     ApiClient.getPluginConfiguration(ssoConfigurationPage.pluginUniqueId).then(
       (config) => {
