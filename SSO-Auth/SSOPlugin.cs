@@ -37,7 +37,7 @@ public class SSOPlugin : BasePlugin<PluginConfiguration>, IPlugin, IHasWebPages
     /// <summary>
     /// Gets the GUID of the SSO plugin.
     /// </summary>
-    public override Guid Id => Guid.Parse("505ce9d1-d916-42fa-86ca-673ef241d7df");
+    public override Guid Id => Guid.Parse("3b4e8710-6ea5-4eb6-b470-4d0707917bd3");
 
     /// <summary>
     /// Returns the available internal web pages of this plugin.
