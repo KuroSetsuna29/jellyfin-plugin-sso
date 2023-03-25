@@ -1,5 +1,5 @@
 const ssoConfigLinking = {
-  pluginUniqueId: "505ce9d1-d916-42fa-86ca-673ef241d7df",
+  pluginUniqueId: "3b4e8710-6ea5-4eb6-b470-4d0707917bd3",
   loadProviders: (view) => {
     const provider_list_id = "sso-provider-list";
     const provider_list_saml_id = `${provider_list_id}-saml`;
