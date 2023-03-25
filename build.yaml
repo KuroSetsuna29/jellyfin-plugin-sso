@@ -1,10 +1,10 @@
 name: "SSO Authentication"
-guid: "505ce9d1-d916-42fa-86ca-673ef241d7df"
+guid: "3b4e8710-6ea5-4eb6-b470-4d0707917bd3"
 imageUrl: "https://raw.githubusercontent.com/9p4/jellyfin-plugin-sso/main/img/logo.png"
 version: "3.4.0.0"
 targetAbi: "10.8.0.0"
 framework: "net6.0"
-owner: "9p4"
+owner: "KuroSetsuna29"
 overview: "Authenticate users against an SSO provider."
 description: |
   This plugin allows users to sign in through an SSO provider (such as Google, Facebook, or your own provider). This enables one-click signin.
