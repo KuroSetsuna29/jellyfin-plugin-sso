@@ -226,7 +226,7 @@ public class OidConfig
     /// <summary>
     /// Gets or sets a value indicating whether HTTPS in the discovery endpoint is required.
     /// </summary>
-    public bool RequireHttps { get; set; }
+    public bool? RequireHttps { get; set; }
 }
 
 /// <summary>
